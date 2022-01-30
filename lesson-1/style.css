@@ -1,0 +1,621 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Lato, sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Здесь начинается блок header */
+
+.topHeader {
+    background: #222222;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 16px;
+    box-sizing: border-box;
+    background: #222222;
+    height: 74px;
+}
+.searchIcon {
+    margin-left: 41px;
+}
+.userIcon {
+    margin-left: 33px;
+}
+.cartIconWrap {
+    position: relative;
+}
+.cartIconWrap span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #F16D7F;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -11px;
+    top: -23px;
+    font-family: lato, sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+}
+.cartIcon {
+    margin-left: 33px;
+}
+
+/* Здесь заканчивается блок header и начинается блок brand */
+
+.brandWrap {
+    display: flex;
+    background-color: #F1E4E6;
+    position: relative;
+}
+.brandLeft {
+    min-height: inherit;
+}
+.image_brand-man {
+    width: 100%;
+    object-fit: cover;
+}
+.brandRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+}
+.PromoTextUp {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 58px;
+}
+.PromoTextDown {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 29px;
+}
+.brandPromoWrap {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    height: 92px;
+}
+.brandPromoWrap span {
+    color: #F16D7F;
+}
+.brandDark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hidden {
+    display: none;
+}
+.menu {
+    margin-left: auto;
+    width: 232px;
+    height: inherit;
+    background: white;
+    margin-left: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 24px;
+    box-sizing: border-box;
+    position: relative;
+    max-height: inherit;
+    overflow: auto;
+}
+.menuCross {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+.menuTitle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.menuHeader {
+    font-size: 14px;
+    line-height: 33px;
+    color: #F16D7F;
+}
+.menuUnit a {
+    display: block;
+    font-size: 14px;
+    line-height: 33px;
+    color: #6F6E6E;
+    text-decoration: none;
+    margin-left: 21px;
+}
+
+/* Здесь заканчивается блок brand и начинается блок offers */
+
+.offers {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 260px 180px;
+    gap: 30px;
+    padding: 65px 16px 96px;
+}
+.offerAccesories {
+    grid-column: 1/-1;
+}
+.offers > div {
+    position: relative;
+}
+.offers img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.offerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    background: rgb(36 18 18 / 71%);
+}
+.offerTitle {
+    font-size: 16px;
+    line-height: 28px;
+}
+.offerTitleBottom {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+/* Здесь заканчивается блок offers и начинается блок featured */
+
+.featured {
+    margin-bottom: 96px;
+}
+.featuredTitleUp {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+.featuredTitleDown {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-top: 6px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.featuredCards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.featuredCard {
+    width: 100%;
+}
+.featured_cardbox {
+    background: #F8F8F8;
+}
+.featuredCardText {
+    max-height: 162px;
+    padding: 25px 18px;
+    box-sizing: border-box;
+} 
+.featuredTitleTop {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.featuredTitleMid {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 12px auto 18px;
+}
+.featuredTitleBottom {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+.featuredImgWrap {
+    position: relative;
+}
+.featuredImgWrap img {
+    width: 100%;
+}
+.featured_cardbox:hover .featuredImgDark {
+    display: flex;
+}
+.featuredImgDark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.featuredImgDark button {
+    background: none;
+    border: none;
+}
+.bap_buttonWrap {
+    display: block;
+    border: 1px solid #FF6A6A;
+    color: #F26376;
+    margin: 48px auto;
+    padding: 14px 38px;
+    background: none;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+}
+.bap_buttonWrap:hover {
+    color: white;
+    background: #FF6A6A;
+}
+
+/* Здесь заканчивается блок featured и начинается блок delivery */
+
+.delivery {
+    background: #222224;
+    padding: 100px 41px
+}
+.delivery .container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.deliveryCard {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.deliveryTitle {
+    font-size: 19.96px;
+    line-height: 24px;  
+    color: #FBFBFB;
+}
+.Top_num1 {
+    margin: 28px auto 16px; 
+}
+.Top_num2 {
+    margin: 20px auto 16px; 
+}
+.Top_num3 {
+    margin: 24px auto 16px; 
+}
+.deliveryTitleBottom {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBFBFB;
+    max-width: 340px;
+}
+
+/* Здесь заканчивается блок delivery и начинается блок subscribe */
+
+.sbscrbWrap {
+    background: url(images/sbscrb_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 97px 20px 126px;
+}
+.sbscrContent {
+    display: flex;
+    justify-content: space-around;
+}
+.sbscrbleft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sbsrbleft_text {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    max-width: 360px;
+}
+.sbscrbRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 59px;
+}
+.sbscrbTextUp {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #222224;
+    max-width: 557px;
+}
+.sbscrbTextDown {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #222224;
+    max-width: 557px;
+    margin-bottom: 22px;
+}
+.sbscrFrm {
+    height: 47px;
+}
+.sbscrFrm input {
+    height: inherit;
+    background: #E1E1E1;
+    border: none;
+    padding: 6px 21px;
+    box-sizing: border-box;
+    float: left;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 185px;
+}
+.sbscrFrm input::-webkit-input-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+.sbscrFrm input::-moz-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+.sbscrFrm input:-ms-input-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+  .sbscrFrm input:-moz-placeholder {
+    color: #222224;
+    opacity: 0.67;
+    font-family: inherit;
+}
+    .sbscrFrm button {
+    font-family: inherit;
+    height: inherit;
+    border: none;
+    color: white;
+    background: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 0 17px;
+}
+
+/* Здесь заканчивается блок subscribe  и начинается блок footer  */
+
+.footer {
+    min-height: 79px;
+    background: #222224;
+}
+.ftrContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.ftrLeft_text {
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.ftrRightCntnt {
+    margin: 24px 0;
+}
+.ftrRightCntnt img {
+    margin-left: 4px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .header {
+    padding: 18px 41px 18px 32px;
+    }
+    .userIcon {
+        margin-left: 25px;
+    }
+    .cartIcon {
+        margin-left: 42px;
+    }
+    .brandWrap {
+        justify-content: start;
+        min-height: 386px;
+    }
+    .image_brand-man {
+        max-height: 386px ;
+    }
+    .PromoTextUp {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .PromoTextDown {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .offers {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+        padding: 20px 16px 0px 16px;
+        margin-bottom: 154px;
+    }
+    .featured {
+        padding: 0px 14px;
+        margin-bottom: 0;
+    }
+    .featuredTitleDown {
+        margin-bottom: 72px;
+    }
+    .featuredCards {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 18px;
+        column-gap: 16px;
+    }
+    .bap_buttonWrap {
+        margin: 33px auto 65px;
+    }
+    .delivery {
+        padding: 0px 14px 81px;
+    }
+    .delivery .container {
+        display: block;
+    }
+    .deliveryCard {
+        margin: auto;
+        padding-top: 48px;
+    }
+    .sbscrbWrap {
+    padding: 54px 20px 109px;
+    }
+    .sbscrContent {
+        display: block;
+    }
+    .sbscrbRight {
+        margin-top: 59px;
+    }
+    .sbscrbTextUp {
+        line-height: 39px;
+    }
+    .ftrContent {
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 667px) {
+    .userIcon,
+    .cartIconWrap span,
+    .brandLeft,
+    .cartIcon {
+        display: none;
+    }
+    .header {
+        padding: 18px 16px;
+    }
+    .brandWrap .container {
+        min-height: 363px;
+    }
+    .brandRight {
+        min-height: inherit;
+    }
+    .PromoTextUp {
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 40px;
+    }
+    .PromoTextDown {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .brandWrap {
+        display: block;
+        min-height: 363px;
+    }
+    .brandPromoWrap {
+        border-left: 12px solid #F16D7F;
+        padding-left: 15px;
+        height: 61px;
+    }
+    .offers {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,247px) 111px;
+        row-gap: 32px;
+        padding: 64px 16px;
+        margin-bottom: 0px;
+    }
+    .featured {
+        padding: 0px 8px;
+     }
+    .featuredCards {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+    .featuredCard {
+        display: block;
+    }
+    .featured_cardbox {
+        min-height: 580px;
+    }
+    .bap_buttonWrap {
+        margin: 41px auto 96px;
+    }
+    .delivery{
+        padding: 0 13px 81px;
+    }
+    .deliveryWrap {
+        padding-bottom: 81px;
+    }
+    .sbsrbleft_text {
+        font-size: 24px;
+        line-height: 22px;
+        max-width: 343px;
+    }
+    .sbscrbTextUp {
+        max-width: 271px;
+    }
+    .sbscrbTextDown {
+        font-size: 14px;
+        line-height: 21px;
+        color: #222224;
+        max-width: 557px;
+        margin-bottom: 22px;
+    }
+    .ftrContent {
+        display: block;
+        text-align: center;
+    }
+    .ftrRightCntnt {
+        margin: 0;
+        padding-top: 43px;
+    }
+    .ftrLeft_text {
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 9px;
+    }
+}
+@media (max-width: 360px) {
+    .deliveryTitleBottom {
+        max-width: 300px;
+    }
+    
+
+}
